@@ -1,0 +1,283 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+li {
+	list-style: none;
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+body {
+	font: normal 20px Helvetica, Arial, sans-serif;
+	width: 100%;
+	background: white;
+	box-sizing: border-box;
+}
+p {
+	margin-bottom: 16px;
+	line-height: 30px;
+	text-align: justify;
+}
+
+/* HEADER */
+body > header {
+	background: #3d3d3d;
+	color: white;
+	margin: 0 auto;
+	height: 540px;
+	text-transform: uppercase;
+}
+body > header > h1 {
+	font-weight: bold;
+	font-size: 68px;
+	text-align: center;
+	background: transparent url("../images/logo.png") 50% 100% no-repeat;
+	color: white;
+	letter-spacing: 20px;
+	font-weight: 400;
+	padding: 130px 0 125px 0;
+	margin-bottom: 135px;
+}
+body > header > nav ul {
+	text-align: center;
+}
+body > header > nav li {
+	font-size: 20px;
+	padding: 0 25px;
+}
+li.active {
+	color: #6DBDAD;
+}
+body > header nav a:hover {
+	color: #F3D74B;
+}
+
+/* MAIN */
+main {
+	max-width: 1000px;
+	color: #3d3d3d;
+	margin: 80px auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.content {
+	float: left;
+	width: 73%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding-right: 10%;
+}
+main article {
+	margin-bottom: 80px;
+}
+h2 {
+	font-weight: 600;
+	font-size: 36px;
+	padding-bottom: 20px;
+}
+main article > h2 a:hover {
+color: #6DBDAD;
+}
+article p > a {
+	color: #6DBDAD;
+}
+/* COMMENTS */
+.comments article {
+	margin-bottom: 45px;
+}
+article img {
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+article h3 {
+	display: inline-block;
+	color: #6DBDAD;
+}
+article header {
+	padding-bottom: 20px;
+}
+.comments {
+	margin-bottom: 100px;
+}
+
+form input, form textarea {
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+
+/* ASIDE */
+aside {
+	box-sizing: border-box;
+	max-width: 22%;
+	background: #F6F7F7;
+	padding: 40px;
+	font-size: 14px;
+	overflow: hidden;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+main aside h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0 0 30px 0;
+}
+main aside ul {
+	padding-left: 20px;
+}
+main aside ul li {
+	padding-bottom: 5px;
+	display: list-item;
+	list-style: url("../images/blt_ul.png");
+	text-transform: uppercase;
+}
+aside nav {
+	margin-bottom: 100px; 
+}
+aside p {
+	line-height: 22px;
+}
+
+/* BUTTONS */
+.button {
+	display: inline-block;
+	padding: 5px 25px;
+	border-radius: 20px;
+	background: #50c3af;
+	color: white;
+	font-size: 14px;
+	margin-right: 25px;
+	cursor: pointer;
+}
+.disabled {
+	background: lightgrey;
+	cursor: not-allowed;
+}
+input[type="submit"] {
+	width: 93px;
+	height: 28px;
+	border: none;
+	font-size: 13px;
+	
+}
+
+/* FOOTER */
+footer {
+	max-width: 1000px;
+	border-top: 1px solid #bbb;
+	padding: 15px 10px 35px 10px;
+	font-size: 12px;
+	color: #888;
+	margin: 0 auto;
+}
+
+/* CLEAR FIX */
+main:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	body > header > h1 {
+		padding-top: 40px;
+		font-size: 48px;
+	}
+	body > header {
+		height: 400px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	.content {
+		padding-right: 0;
+	}
+	aside { 
+		margin-right: 0;
+		padding: 20px;
+	}
+	body > header nav li {
+		padding: 0 15px;
+	}
+}
+@media (max-width: 650px) {
+	.content {
+		float: none;
+		width: 100%;
+		padding: 0 20px;
+	}
+	aside {
+		margin: 50px 0;
+		max-width: 100%;
+		height: 230px;
+		display: block;
+		padding-top: 30px;
+	}
+	aside div {
+		display: inline-block;
+		width: 48%;
+		vertical-align: top;
+	}
+	form {
+		width: 95%;
+	}
+}
+@media (max-width: 520px) {
+	body > header h1 {
+		margin-bottom: 30px;
+	}
+	body > header nav li {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 49%;
+		padding: 10px;
+	}
+}
+@media (max-width: 480px) {
+	body > header > h1 { 
+		background-size: 90% auto;
+		padding-bottom: 90px; 
+	 }
+	aside div {
+		display: block;
+    width: auto;
+    padding: 20px;
+    margin: 0 0 25px 0;
+    background: #f6f7f8;
+	}
+	aside {
+		background: transparent;
+		height: auto;
+		margin-bottom: 0;
+	}
+	aside nav {
+		margin-bottom: 20px;
+	}
+	main {
+		margin-bottom: 20px;
+	}
+}

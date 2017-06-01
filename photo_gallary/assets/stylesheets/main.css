@@ -1,0 +1,62 @@
+ul,ol { list-style: none; }
+h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,dl,dt,dd, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+a img,:link img,:visited img, fieldset { border: none; }
+address { font-style: normal; }
+header, section, article, nav, footer, hgroup, details, summary, figure, main { display: block; }
+mark {
+  color: inherit;
+  background: transparent; }
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+li {
+	display: inline-block;
+	list-style: none;
+}
+
+
+body {
+	background: black;
+	display: block;
+	font: normal 16px Helvetica, Arial, sans-serif;
+	color: white;
+}
+
+section.pictures {
+	margin: 0 auto;
+	min-width: 600px;
+	max-width: 1000px;
+	background-color: #323332;
+	padding: 20px;
+}
+.pictures * {
+	box-sizing: border-box;
+}
+.pictures h3 {
+	font-size: 30px;
+	text-align: center;
+	padding: 28px 0 20px 0;
+}
+.pictures figure {
+	margin-bottom: 20px;
+}
+.pictures figure img {
+	width: 100%;
+	border: 14px solid white;
+}
+.pictures li {
+	margin: 0 4% 0 0;
+	border: 3px solid white;
+	width: 22%
+}
+.pictures li:last-child {
+	margin: 0 0 0 0;
+}
+.pictures li img {
+	display: block;
+	width: 100%;
+
+}

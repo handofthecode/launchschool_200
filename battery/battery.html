@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<style>
+			.battery {
+				height: 124px;
+				width: 64;
+				background: transparent url("sprite_sheet_1.jpg") 0 0 no-repeat;
+			}
+			.full {
+
+			}
+			.medium {
+				background-position: 0 35%;
+			}
+			.low {
+				background-position: 0 68%;
+			}
+			.empty {
+				background-position: 0 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Battery life indicator</h1>
+
+		<h2>Full</h2>
+		<div class="battery full"></div>
+
+		<h2>Medium</h2>
+		<div class="battery medium"></div>
+
+		<h2>Low</h2>
+		<div class="battery low"></div>
+
+		<h2>Empty</h2>
+		<div class="battery empty"></div>
+
+	</body>
+</html>

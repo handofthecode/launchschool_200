@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	width: 600px;
+	margin: 0 auto;
+	font: normal 16px Helvetica, Arial, sans-serif;
+}
+h1 {
+	font-size: 28px;
+	padding: 24px 0;
+}
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 19px;
+}
+
+/* FORM */
+label {
+	font-weight: bold;
+	color: #656672
+}
+dt {
+	margin-bottom: 10px;
+}
+dd {
+	margin-bottom: 24px;
+}
+form section{
+	background: #EBECEB;
+	padding: 24px 32px;
+	border-left: 4px solid #CBCCCB;
+	box-sizing: border-box;
+	padding-bottom: 24px;
+	margin-bottom: 2px;
+}
+input,
+textarea {
+	width: 100%;
+	border: 1px solid #116DC8;
+	border-radius: 4px;
+	font: normal 14px Helvetica, Arial, sans-serif;
+	padding: 11px 8px;
+	box-sizing: border-box;
+}
+
+/* PERSONAL */
+section.personal input[name*="name"] {
+	width: 49%;
+	display: inline-block;
+}
+input[name="last_name"] {
+	margin-left: 2%;
+}
+
+/* SOCIAL MEDIA & ACCOUNT */
+section.socialmedia dl {
+	display: inline-block;
+	width: 32%;
+}
+section.socialmedia dl:not(:nth-of-type(1)),
+section.account dl:last-child {
+	margin-left: 2%;
+}
+section.account dl:not(:nth-of-type(1)) {
+	display: inline-block;
+	width: 49%;
+}
+
+/* BIO */
+textarea {
+	height: 108px;
+	margin-bottom: 24px;
+}
+/* CONFIRM */
+section.confirm {
+	margin-bottom: 26px;
+}
+.confirm input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+	position: absolute;
+	left: -24px;
+	}
+.confirm label {
+	position: relative;
+	left: 20px;
+	display: block;
+	width: auto;
+	display: inline-block;
+	font: normal 14px Helvetica, Arial, sans-serif;
+	margin-bottom: 24px;
+}
+input.button {
+	background: #116DC8;
+	width: 174px;
+	height: 46px;
+	color: white;
+	font: normal 16px Helvetica, Arial, sans-serif;
+}
+input.button:hover,
+input.button:focus {
+	background-color: #5f95cc;
+	border-style: none;
+}

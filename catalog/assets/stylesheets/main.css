@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+body {
+	font: normal 20px Helvetica, Arial, sans-serif;
+	background: #FCD633;
+}
+header {
+	background: #257EC1;
+	color: white;
+	border-radius: 0 0 15px 15px;
+	width: 900px;
+	margin: 0 auto;
+}
+header h1 {
+	padding: 30px 0 30px 25px;
+	font-size: 38px;
+	font-weight: 600;
+}
+main {
+	width: 900px;
+	margin: 30px auto 0 auto;
+	padding: 25px 25px;
+	box-sizing: border-box;
+	background: #EBECEC;
+}
+main h2 {
+	font-size: 32px;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 18px;
+}
+
+/* FIGURES */
+ul {
+	font-size: 0;
+	margin: 0 -1%;
+}
+li {
+	display: inline-block;
+	width: 23%;
+	background: white;
+	padding: 11px;
+	box-sizing: border-box;
+	margin: 1%;
+}
+li figcaption {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+li p {
+	font-size: 16px;
+	font-weight: normal;
+}
+img {
+	display: block;
+	height: 140px;
+	margin: 5px auto 20px auto;
+}
+li input[type="checkbox"] { display: none; }
+li input:checked + figure img {
+	position: fixed;
+	left: 50%;
+	top: 100px;
+	width: 400px;
+	height: auto;
+	margin: 0 0 0 -200px;
+	z-index: 2;
+}
+li input:checked + figure:before {
+	position: fixed;
+	content: "";
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 1;
+}

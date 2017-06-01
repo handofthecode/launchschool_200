@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+	</head>
+	<body>
+		<form value="" method="get">
+			<fieldset>
+				<dl>
+					<dt>
+					<label for="first_name">First Name</label>
+					</dt>
+					<dd>
+						<input type="text" name="first_name">
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<label for="last_name">Last Name</label>
+					</dt>
+					<dd>
+						<input type="text" name="last_name">
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<label for="email">Email</label>
+					</dt>
+					<dd>
+						<input type="email" name="email" placeholder="youremail@gmail.com">
+					</dd>
+				</dl>
+				<dl class="address">
+					<dt>
+						<label for="city">City</label>
+					</dt>
+					<dd>
+						<input type="text" name="city">
+					</dd>
+				</dl><!--
+				--><dl class="address">
+					<dt>
+						<label for="state">State</label>
+					</dt>
+					<dd>
+						<select name="state" id="state">
+						  <option>AK</option>
+						  <option>AL</option>
+						  <option>AR</option>
+						  <option>AZ</option>
+						  <option>CA</option>
+						  <option>CO</option>
+						  <option>CT</option>
+						  <option>DC</option>
+						  <option>DE</option>
+						  <option>FL</option>
+						  <option>GA</option>
+						  <option>HI</option>
+						  <option>IA</option>
+						  <option>ID</option>
+						  <option>IL</option>
+						  <option>IN</option>
+						  <option>KS</option>
+						  <option>KY</option>
+						  <option>LA</option>
+						  <option>MA</option>
+						  <option>MD</option>
+						  <option>ME</option>
+						  <option>MI</option>
+						  <option>MN</option>
+						  <option>MO</option>
+						  <option>MS</option>
+						  <option>MT</option>
+						  <option>NC</option>
+						  <option>ND</option>
+						  <option>NE</option>
+						  <option>NH</option>
+						  <option>NJ</option>
+						  <option>NM</option>
+						  <option>NV</option>
+						  <option>NY</option>
+						  <option>OH</option>
+						  <option>OK</option>
+						  <option>OR</option>
+						  <option>PA</option>
+						  <option>RI</option>
+						  <option>SC</option>
+						  <option>SD</option>
+						  <option>TN</option>
+						  <option>TX</option>
+						  <option>UT</option>
+						  <option>VA</option>
+						  <option>VT</option>
+						  <option>WA</option>
+						  <option>WI</option>
+						  <option>WV</option>
+						  <option>WY</option>
+						</select>
+					</dd>
+				</dl><!--
+				--><dl class="address">
+					<dt>
+						<label for="zipcode">Zipcode</label>
+					</dt>
+					<dd>
+						<input type="number" inputmode="numeric" name="zipcode">
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<label for="colors">Which of these colors do you most prefer?</label>
+					</dt>
+					<dd>
+						<div class="circle blue"><input type="radio" name="colors" value="blue" checked="checked"></div>
+						<div class="circle green"><input type="radio" name="colors" value="green"></div>
+						<div class="circle orange"><input type="radio" name="colors" value="orange"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<label for="web_tech">What web technologies do you want to hear more about?</label>
+					</dt>
+					<dd>
+						<select name="web_tech" id="web_tech" multiple>
+							<option>HTML</option>
+							<option>CSS</option>
+							<option>RUBY</option>
+							<option>JAVA</option>
+							<option>Javascript</option>
+							<option>C#</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<label for="comments">Comments</label>
+					</dt>
+					<dd>
+						<textarea name="comments" rows="10" cols="80"></textarea>
+					</dd>
+				</dl>
+				<input type="text" name="timestamp" value="10/11/2017" hidden>
+				<input type="submit" value="submit">
+				<input type="reset" value="reset">
+			</fieldset>
+		</form>
+	</body>
+</html>
