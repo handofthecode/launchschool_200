@@ -9,10 +9,13 @@ main {
   padding: 0 30px;
   background: #ffffff;
 }
-a {
-  color:green;
+footer a, main a {
+  color: green;
   text-decoration: none;
   font-weight: 700;
+}
+p a:hover, header nav li a:hover {
+  text-decoration: underline;
 }
 
 /* FIXED NAV */
@@ -30,10 +33,13 @@ header nav ul {
   display: block;
   text-align: center;
 }
-header nav ul li {
+header nav li {
   display: inline-block;
   padding: 13px 25px;
   text-transform: uppercase;
+}
+header nav a {
+  text-decoration: none;
 }
 
 /* MAIN HEADING */
@@ -99,12 +105,13 @@ div.speaker_gallery {
   margin: 10px -30px 2px -30px;
 }
 
-section#speakers figure a {
+section#speakers figure h3 {
   display: block;
   font-size: 24px;
   font-weight: 700;
   padding-top: 31px;
   padding-bottom: 8px;
+  color: green;
 }
 section#speakers figure {
   vertical-align: top;
@@ -117,6 +124,9 @@ section#speakers figure {
   margin: 5px;
   margin-bottom: 5px;
   line-height: 25px;
+}
+section#speakers figcaption {
+  color: #333;
 }
 
 /* SCHEDULE */
@@ -132,7 +142,7 @@ section.schedule td:nth-child(3) {
   padding: 10px 10px 7px 0;
 }
 section.schedule td:nth-child(2) {
-  padding: 10px 0px 3px 19px;
+  padding: 10px 18px 3px 19px;
   text-align: left;
   font-size: 0;
 }
@@ -170,6 +180,9 @@ section.schedule td span {
   margin: -3px 3.5px 8px 0px;
   vertical-align: 6px;
   padding: 1px 4px;
+}
+section.schedule td a:hover {
+  text-decoration: underline;
 }
 
 /* LOCATION */
@@ -269,6 +282,9 @@ section#call_for_papers .button {
 }
 div.footer_box .button {
   margin-left: 0;
+}
+.button:hover {
+  background: darkgreen;
 }
 
 @media (max-width: 654px) {
